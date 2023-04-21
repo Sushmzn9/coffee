@@ -16,6 +16,8 @@ body{
 h1{
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    animation: moved 5s infinite linear ease-in-out;
+    margin: 0;
 }
 
 .main{
@@ -25,6 +27,14 @@ h1{
     position: relative;
     border-radius: 10px;
 }
+div>img{
+    width: 80px;
+    position: absolute;
+    bottom: 58px;
+    right: 58px;
+    border-radius: 30%;
+}
+
 .circle{
   background-color: #C86428;
     border-radius: 50%;
@@ -57,10 +67,84 @@ h1{
 .plate{
     background-color: #ffffffc0;
     position: absolute;
-    height: 134px;
+    height: 101px;
     width: 300px;
     border-radius: 50%;
     top: 336px;
   
+
+}
+.eva{
+    position: absolute;
+    background-color: black;
+    top: 130px;
+    right: 350px;
+    width: 4px;
+    height: 46px;
+    border: 5px dotted rgba(255, 255, 255, 0.701);
+    animation: spin 4s infinite linear ;
+}
+.eva2{
+    position: absolute;
+    background-color: black;
+    top: 130px;
+    right:300px;
+    width: 4px;
+    height: 46px;
+    border: 5px dotted rgba(255, 255, 255, 0.701);
+    animation: spin 4s infinite linear ;
+}
+
+.eva3{
+    position: absolute;
+    background-color: black;
+    top: 130px;
+    right: 400px;
+    width: 4px;
+    height: 46px;
+    border: 5px dotted rgba(255, 255, 255, 0.701);
+    animation: spin 4s infinite linear  ;
+}
+
+
+.eva4{
+    position: absolute;
+    background-color: black;
+    top: 130px;
+    right: 480px;
+    width: 4px;
+    height: 46px;
+    border: 5px dotted rgba(255, 255, 255, 0.701);
+    animation: spin 4s infinite linear ;
+}
+.eva5{
+    position: absolute;
+    background-color: black;
+    top: 130px;
+    right: 440px;
+    width: 4px;
+    height: 46px;
+    border: 5px dotted rgba(255, 255, 255, 0.701);
+    animation: spin 4s infinite linear  ;
+}
+
+
+@keyframes spin{
+    0%{
+       transform: rotate(16deg);
+     
+  
+    }
+    50%{
+        transform: rotate(-16deg);
+       
+        top: 0.2px;
+       
+    }
+100%{
+   transform: rotate(16deg);
+   bottom: 0.5px;
+ 
+}
 
 }
